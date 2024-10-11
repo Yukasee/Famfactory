@@ -364,12 +364,14 @@ width:158px;
     margin-top: 764px;
 }
 
-.partners h2.headline {
+.partners h2 {
     color: #FFFFFF;
-    margin-top: ;
+    margin-top: 60px;
 }
 
 .partners_subheader {
+    margin: 0 auto;
+    margin-top: 30px;
     color:#ffffff;
     text-align:center;
     font-size:16px;
@@ -381,38 +383,85 @@ width:158px;
     margin-bottom: 34px;
 }
 
-.partners .col-xs-3 {
+.partners_card {
     position: relative;
+    display: block;
 }
 
-.partners_img:hover {
-    
-    background: rgba(23, 22, 22, 0.5);
-    opacity: 10%;
-    transition: all 0.4s ease;
-    cursor: pointer;
-    z-index: 0;
+.partners_img {
+    width: 351px;
+    height: 351px;
+    z-index: -1;
+}
+
+.partners_card::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background: #0b0b0b;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.partners_card::after {
+    content: "style";
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family:RFDewiExpanded-Ultrabold;
+    font-weight: 800;
+    font-size: 36px;
+    z-index: 2;
+}
+
+
+.partners_card:hover::before {
+    opacity: 0.9;
+}
+
+.partners_card:hover::after {
+    opacity: 1;
 }
 
 .popup_text {
     position: absolute;
-    top: 175px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    z-index: 5;
+    color: var(--font-color-white);
     opacity: 0;
-    color:#FFFFFF;
-    text-align:center;
-    text-transform: uppercase;
-    font-size:40px;
-    font-weight: bold;
-    font-family: RFDewiExpanded-Ultrabold;
-    z-index: 1;
-}
+    transition: opacity 0.3s ease-in-out;
+  }
 
-.popup_text:hover {
-    opacity: 1.0;
-}
+  .partners_img:hover {
+    content: '';
+    background: #353535;
+  }
 
+/*.partners_card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #171616;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+*/
 
 
 
