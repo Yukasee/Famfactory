@@ -19,6 +19,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #ed893c;
+}
+
 
 .header {
     height: 677px;
@@ -36,10 +40,8 @@ button {
 }
 
 .menu_wrapper > :nth-child(2) {
-    margin-left: 100px;
+    margin-left:52px;
 }
-
-
 
 .contacts { 
     color:#ffffff;
@@ -123,7 +125,7 @@ button {
 .row {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-between;
     margin: 0 auto;
     margin-top: 88px;
 }
@@ -368,7 +370,7 @@ width:158px;
     height: 853px;
     background-color: #E6E6E6;
     border-radius: 15px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .stores .headline {
@@ -417,18 +419,13 @@ width:158px;
     line-height:auto;
 }
 
-.address1 {
-    position: absolute;
-    bottom: 0;
-}
-
 .partners {
     position: relative;
     margin-top: -642px;
     width: 100%;
     height: 2449px;
     background-color: #191919;
-    z-index: -1;
+    z-index: 1;
 }
 
 .partners_wrapper {
@@ -451,19 +448,17 @@ width:158px;
     width:737px;
 }
 
-.partners .row {
-    margin-bottom: 34px;
-}
-
 .partners_card {
     position: relative;
     display: block;
+    border-radius: 3px;
+    z-index: 1;
 }
 
 .partners_img {
+    cursor: pointer;
     width: 351px;
     height: 351px;
-    z-index: -1;
 }
 
 .partners_card::before {
@@ -476,11 +471,15 @@ width:158px;
     background: #0b0b0b;
     opacity: 0;
     transition: 0.5s;
-    z-index: 1;
+    z-index: 2;
+}
+
+.partners_card:hover::before {
+    opacity: 0.9;
 }
 
 .partners_card::after {
-    content: "style";
+    content: attr(title);
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -491,29 +490,22 @@ width:158px;
     font-family:RFDewiExpanded-Ultrabold;
     font-weight: 800;
     font-size: 36px;
-    z-index: 2;
-}
-
-
-.partners_card:hover::before {
-    opacity: 0.9;
+    z-index: 3;
 }
 
 .partners_card:hover::after {
     opacity: 1;
+    
 }
 
 footer {
-
     padding-top: 60px;
     padding-bottom: 380px;
-
     width: 100%;
     height: 230px;
     background-color: #191919;
 }
 
 footer button {
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
