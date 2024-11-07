@@ -9,116 +9,117 @@
 </head>
 <body>
     <div class="wrapper-main">
-        <section class="header">
-            <nav>
-                <div class="menu_wrapper">
-                    <div class="phone"><div class="contacts">+7 925 343 16 96</div>
-                                    <div class="simpletext">Перезвоните мне</div></div>
-                    <div class="brand">
+        <header>
+
+                <div class="menu">
+                    <div class="menu__phone"><a class="contacts" href="tel+79253431696">+7 925 343 16 96</a>
+                                    <a href="#" class="menu__phone-popup"><div class="simpletext">Перезвоните мне</div></a></div>
+                    <div class="menu__brand">
                         <div class="famfactory">famfactory</div>
                         <div class="famfactory_subheader">Швейная фабрика</div>
                     </div>
-                    <div class="email">
-                        <div class="contacts">MAIL@FAMFACTORY.RU</div>
+                    <div class="menu__email">
+                        <a href="mailto:MAIL@FAMFACTORY.RU" class="contacts"><div class="contacts">MAIL@FAMFACTORY.RU</div></a>
                         <div class="simpletext">Наша почта</div>
                     </div>
-                </div></nav>
+                </div>
             <h1 class="title">Сделано <br>в Санкт-Петербурге</h1>
-            <button class="send_request">Отправить запрос</button>
-        </section>
+            <button type="submit" class="request">Отправить запрос</button>
+        </header>
         <section class="prices">
-            <div class="container">
+            ><div class="container">
+                <div class="prices__wrapper">
                 <h2 class="headline">Современный<br>
                     мерчендайз для бизнеса</h2>
-                    <div class="prices_text">Над реализацией проектов по разработке и производству одеждыи аксессураов трудится огромная команда профессионалов, поэтому мы можем создавать проекты любой сложности и масштабов под ключ или воплотить конкретные задачи на любом из этапов производства.</div>
+                    <div class="prices__text">Над реализацией проектов по разработке и производству одеждыи аксессураов трудится огромная команда профессионалов, поэтому мы можем создавать проекты любой сложности и масштабов под ключ или воплотить конкретные задачи на любом из этапов производства.</div>
                     
-            <div class="row">
-                <div class="col-xs-2 "><img src="img/hoodie.png" alt="hoodie"></div>
+
+                <div class="col-xs-2"><img src="img/hoodie.png" alt="hoodie"></div>
                 <div class="col-xs-2"><img src="img/tshirt.png" alt="tshirt"></div>
                 <div class="col-xs-2"><img src="img/sweatshirt.png" alt="sweatshirt"></div>
-            </div>
-            <div class="row">
+
+
                 <div class="col-xs-2"><img src="img/pants.png" alt="pants"></div>
                 <div class="col-xs-2"><img src="img/shopper.png" alt="shopper"></div>
                 <div class="col-xs-2"><img src="img/hat.png" alt="hat"></div>
             </div>
+            </div>
         </section>
         <section class="video">
-            <div class="video_content">
+            <div class="video__content">
                 <h3 class="headline">Презентация нашей<br>
                     коллекции одежды 2024</h3>
                 <a href="#" class="player"><img src="img/Ellipse.png" alt="e" class="ellipse">
                                 <img src="img/arrow.png" alt="arr" class="arrow"></a>
             </div>
+            <video class="video__player" width="1124" height="350" autoplay muted>
+                <source src="movie.mp4" type="video/mp4"></video> 
         </section>
         <section class="collaboration">
-            <div class="collab_wrapper">
                 <div class="container">
-                    <div class="collab_title"><h2 class="headline">Производство одежды для компаний, брендов, артистов</h2></div>
-                    <div class="collab_subtitle">Наша команда по разработке и производству одежды может реализовать проекты любой сложности, независимо от их масштаба. Мы можем взять на себя всю работу под ключ, или решить конкретные задачи на любом из этапов производства.</div>
-                    <div class="row">
+                    <div class="collaboration__wrapper">
+                    <div class="collaboration__title"><h2 class="headline">Производство одежды для компаний, брендов, артистов</h2></div>
+                    <div class="collaboration__subtitle">Наша команда по разработке и производству одежды может реализовать проекты любой сложности, независимо от их масштаба. Мы можем взять на себя всю работу под ключ, или решить конкретные задачи на любом из этапов производства.</div>
                         <div class="col-xs-2"><a href="#" class="design"><img src="img/design.png" alt="design">
-                            <h3 class="collab_headline">Разработка лекал и дизайна</h3>
-                            <div class="collab_text">Поможем создать уникальные лекала для вашей одежды или адаптировать уже имеющиеся. Разработаем индивидуальный дизайн ваших товаров</div></a></div>
+                            <h3 class="collaboration__headline">Разработка лекал и дизайна</h3>
+                            <div class="collaboration__text">Поможем создать уникальные лекала для вашей одежды или адаптировать уже имеющиеся. Разработаем индивидуальный дизайн ваших товаров</div></a></div>
                         <div class="col-xs-2"><a href="#" class="sewing"><img src="img/sewing.png" alt="sewing">
-                            <h3 class="collab_headline">Пошив одежды на заказ</h3>
-                            <div class="collab_text">Пошив трикотажных изделий любой сложности и в любых объемах, как по вашим образцам, так и по нашим базовым лекалам</div></a></div>
+                            <h3 class="collaboration__headline">Пошив одежды на заказ</h3>
+                            <div class="collaboration__text">Пошив трикотажных изделий любой сложности и в любых объемах, как по вашим образцам, так и по нашим базовым лекалам</div></a></div>
                         <div class="col-xs-2"><a href="#" class="brand"><img src="img/brand.png" alt="brand">
-                            <h3 class="collab_headline">Бренд одежды под ключ</h3>
-                            <div class="collab_text">Поможем разработать линейку одежды для вашего бренда, от пошива до реализации.</div></a></div>
-                    </div>
-                </div>
+                            <h3 class="collaboration__headline">Бренд одежды под ключ</h3>
+                            <div class="collaboration__text">Поможем разработать линейку одежды для вашего бренда, от пошива до реализации.</div></a></div>
+                    
+                         </div>
             </div>
         </section>
         <section class="manufacture">
-            <div class="container">
                 <h2 class="headline">Способы нанесения принтов и вышивка</h2>
-            </div>
             <div class="container">
-                <div class="row">
+                <div class="manufacture__wrap">
                     <div class="col-xs-3">
                         <img src="img/silk.png" alt="silk">
-                        <h3 class="manufacture_headline">Шелкография</h3>
-                        <div class="manufacture_text">Трафаретная печать подходит для нанесения почти на любых изделиях: футболках, толстовках, свитшотах и т.д. Принты, сделанные данным способом имеют высокую износостойкость, не требуют особого ухода и прослужат довольно долго.</div>
+                        <h3 class="manufacture__headline">Шелкография</h3>
+                        <div class="manufacture__text">Трафаретная печать подходит для нанесения почти на любых изделиях: футболках, толстовках, свитшотах и т.д. Принты, сделанные данным способом имеют высокую износостойкость, не требуют особого ухода и прослужат довольно долго.</div>
                     </div>
                     <div class="col-xs-3">
                         <img src="img/embroidery.png" alt="embroidery">
-                        <h3 class="manufacture_headline">Вышивка на одежде</h3>
-                        <div class="manufacture_text">Трафаретная печать подходит для нанесения почти на любых изделиях: футболках, толстовках, свитшотах и т.д. Принты, сделанные даннымпособом имеют высокую износостойкость, не требОдин из самых интересных способов нанесения изображения на одежду. Вышивка долговечна, без проблем переносит механические воздействия. Данный вид нанесения выглядит наиболее эффектно и прослужит дольше всего.
+                        <h3 class="manufacture__headline">Вышивка на одежде</h3>
+                        <div class="manufacture__text">Трафаретная печать подходит для нанесения почти на любых изделиях: футболках, толстовках, свитшотах и т.д. Принты, сделанные даннымпособом имеют высокую износостойкость, не требОдин из самых интересных способов нанесения изображения на одежду. Вышивка долговечна, без проблем переносит механические воздействия. Данный вид нанесения выглядит наиболее эффектно и прослужит дольше всего.
                         </div>
                     </div>
-                    </div>
+                </div>
                 </div>
         </section>
         <section class="vending">
             <div class="container">
                 
                 <h3 class="headline">Если у вас есть свои товары, магазинах можем вам помочь реализовать их.</h3>
-                <div class="vending_subheader">Разместим Ваши товары на сайте vsrap.com и в офлайн-магазинах «VSRAP». 
+                <div class="vending__subheader">Разместим Ваши товары на сайте vsrap.com и в офлайн-магазинах «VSRAP». 
                     Осуществим обработку заказов и их отправку. Каждое предложение мы рассматриваем индивидуально.</div>
             </div>
         </section>
         <section class="scheme">
             <div class="container">
                 <h2 class="headline">Схема работы с нами</h2>
-                <div class="scheme_subheader">К каждому проекту мы подходим индивидуально. Свяжитесь с нами и мы поможем реализовать ваши идеи.
+                <div class="scheme__subheader">К каждому проекту мы подходим индивидуально. Свяжитесь с нами и мы поможем реализовать ваши идеи.
                 </div>
             <div class="row">
                 <div class="col-sm-1">
                     <img src="icons/1.png" alt="1">
-                    <div class="scheme_descr">Отправляете заявку или звоните +7 (911) 109-97-07</div>
+                    <div class="scheme__descr">Отправляете заявку или звоните +7 (911) 109-97-07</div>
                 </div>
                 <div class="col-sm-1">
                     <img src="icons/2.png" alt="2">
-                    <div class="scheme_descr">Разрабатываем лекала и шьём образец</div>
+                    <div class="scheme__descr">Разрабатываем лекала и шьём образец</div>
                 </div>
                 <div class="col-sm-1">
                     <img src="icons/3.png" alt="3">
-                    <div class="scheme_descr">Шьём тираж и наносим принт или вышивку</div>
+                    <div class="scheme__descr">Шьём тираж и наносим принт или вышивку</div>
                 </div>
                 <div class="col-sm-1">
                     <img src="icons/4.png" alt="4">
-                    <div class="scheme_descr">Упаковываем и отгружаем партию</div>
+                    <div class="scheme__descr">Упаковываем и отгружаем партию</div>
                 </div>
             </div>
         </div>
@@ -126,13 +127,12 @@
         <section class="factory">
               <div class="container">
                 <h2 class="headline">Все вещи мы шьём на собственном производстве в Санкт-Петербурге по собственному дизайну и крою</h2>
-            <div class="factory_subheader">А наши коллекции сделанные совместно с топовыми блогерами и артистами продаём в онлайн и через собственные розничные магазины в Питере и Москве.</div>
-                <div class="row">
+            <div class="factory__subheader">А наши коллекции сделанные совместно с топовыми блогерами и артистами продаём в онлайн и через собственные розничные магазины в Питере и Москве.</div>
+                <div class="factory_wrapper">
                     <div class="col-xs-2"><img src="img/pic1.png" alt="pic1"></div>
                     <div class="col-xs-2"><img src="img/pic2.png" alt="pic2"></div>
                     <div class="col-xs-2"><img src="img/pic3.png" alt="pic3"></div>
-                </div>
-                <div class="row">
+
                     <div class="col-xs-2"><img src="img/pic4.png" alt="png"></div>
                     <div class="col-xs-2"><img src="img/pic5.png" alt="5"></div>
                     <div class="col-xs-2"><img src="img/pic6.png" alt="6"></div>
@@ -142,7 +142,7 @@
         <section class="stores">
             
             <h2 class="headline">Магазины в самом в центре Питера и Москвы</h2>
-            <div class="stores_subheader">
+            <div class="stores__subheader">
                 Мы можем организовать реализацию вашего товара, не только в онлайне, но и в наших розничных магазинах. </div>
                 <table>
                     <tr><td>
@@ -158,79 +158,76 @@
 
         <section class="partners">
             <div class="container">
-                <div class="partners_wrapper">
+                <div class="partners__wrapper">
                     <h2 class="headline">Наши коллаборации</h2>
-                <div class="partners_subheader">С нами уже самые топовые инфлюенсеры.</div>
-                <div class="row">
+                <div class="partners__subheader">С нами уже самые топовые инфлюенсеры.</div>
+
                     <div class="col-xs-3">
-                        <div class="partners_card" title="shirt">
-                        <img src="img/col1.png" alt="1" class="partners_img">
+                        <div class="partners__card" title="shirt">
+                        <img src="img/col1.webp" alt="1" class="partners_img">
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="partners_card" title="black">
-                        <img src="img/col2.png" alt="2" class="partners_img">
+                        <div class="partners__card" title="black">
+                        <img src="img/col2.webp" alt="2" class="partners_img">
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="partners_card" title="lime">
-                        <img src="img/col3.png" alt="3" class="partners_img">
+                        <div class="partners__card" title="lime">
+                        <img src="img/col3.webp" alt="3" class="partners_img">
                         </div>
                     </div>
-                </div>
-                <div class="row">
+                
                     <div class="col-xs-3">
-                        <div class="partners_card" title="tiger">
-                        <img src="img/col4.png" alt="4" class="partners_img">
-                        </div>
-                    </div>
-                    <div class="col-xs-3">
-                        <div class="partners_card" title="navy">
-                        <img src="img/col5.png" alt="5" class="partners_img">
+                        <div class="partners__card" title="tiger">
+                        <img src="img/col4.webp" alt="4" class="partners_img">
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="partners_card" title="magneta">
-                        <img src="img/col6.png" alt="6" class="partners_img">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <div class="partners_card" title="vision">
-                        <img src="img/col7.png" alt="7" class="partners_img">
+                        <div class="partners__card" title="navy">
+                        <img src="img/col5.webp" alt="5" class="partners_img">
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="partners_card" title="orange">
-                        <img src="img/col8.png" alt="8" class="partners_img">
+                        <div class="partners__card" title="magneta">
+                        <img src="img/col6.webp" alt="6" class="partners_img">
+                        </div>
+                    </div>
+            
+                    <div class="col-xs-3">
+                        <div class="partners__card" title="vision">
+                        <img src="img/col7.webp" alt="7" class="partners_img">
                         </div>
                     </div>
                     <div class="col-xs-3">
-                        <div class="partners_card" title="graffiti">
-                        <img src="img/col9.png" alt="9" class="partners_img">
+                        <div class="partners__card" title="orange">
+                        <img src="img/col8.webp" alt="8" class="partners_img">
                         </div>
                     </div>
-                </div>
+                    <div class="col-xs-3">
+                        <div class="partners__card" title="graffiti">
+                        <img src="img/col9.webp" alt="9" class="partners_img">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
         <footer>
-            <div class="container">
-                <div class="menu_wrapper">
-                    <div class="phone"><div class="contacts">+7 925 343 16 96</div>
-                                    <div class="simpletext">Перезвоните мне</div></div>
-                    <div class="brand">
+                <div class="menu">
+                    <div class="menu__phone"><a class="contacts" href="tel+79253431696">+7 925 343 16 96</a>
+                        <a class="simpletext">Перезвоните мне</a></div>
+                    <div class="menu__brand">
                         <div class="famfactory">famfactory</div>
                         <div class="famfactory_subheader">Швейная фабрика</div>
                     </div>
-                    <div class="email">
+                    <div class="menu__email">
                         <div class="contacts">MAIL@FAMFACTORY.RU</div>
                         <div class="simpletext">Наша почта</div>
                     </div>
                 </div>
-                <button class="send_request">Отправить запрос</button>
-            </div>
+                
+            <button type="submit"  class="request">Отправить запрос</button>
         </footer>
 </div>
 </body>
