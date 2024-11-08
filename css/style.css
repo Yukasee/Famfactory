@@ -58,7 +58,7 @@ header {
 }
 
 .menu > :nth-child(2) {
-    margin-left:52px;
+    margin-left:62px;
 }
 
 .contacts { 
@@ -81,7 +81,9 @@ header {
     font-family:RFDewiExpanded-Regular;
 }
 
-
+.main {
+    flex: 1 1 auto;
+}
 
 
 
@@ -490,37 +492,52 @@ h3.headline {
     position: relative;
     margin-top: -642px;
     width: 100%;
+    min-height: 2450px;
     background-color: #191919;
     z-index: 1;
 }
 
-.partners__wrapper {
+.partners .container {
     position: absolute;
-    top: 764px;
-    max-width: 1124px;
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-    justify-items: flex-start;
-    flex-wrap: wrap;
-    row-gap: 34px;
-    column-gap: 33px;
+    top: 720px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .partners h2 {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 40px;
     color: #FFFFFF;
-    margin-top: 60px;
+    text-align: center;
+    z-index: 2;
 }
 
 .partners__subheader {
     margin: 0 auto;
-    margin-top: 30px;
+    position:relative;
+    margin-bottom: 115px;
     color:#ffffff;
     text-align:center;
     font-size:16px;
     font-family:RFDewiExpanded-Regular;
     width:737px;
 }
+
+.partners__wrapper {
+    position: absolute;
+    top: 200px;
+    max-width: 1124px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 34px;
+    column-gap: 33px;
+}
+
+
 
 .partners__card {
     position: relative;
@@ -573,9 +590,7 @@ h3.headline {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    padding-top: 60px;
+
     width: 100%;
     min-height: 230px;
     background-color: #191919;
